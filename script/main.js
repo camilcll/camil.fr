@@ -1,22 +1,4 @@
 
-/*** HAMBURGER ***/
-$(document).ready(function(){
-	var $hamburger = $(".hamburger");
-	var $menu = $("#scroll-menu");
-
-  $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-		$menu.removeClass("close");
-		$menu.toggleClass("open");
-		$hamburger.on("click", function(e) {
-			$menu.removeClass("open");
-			$menu.toggleClass("close");
-		});
-  });
-});
-/* END OF HAMBURGER */
-
-
 /*** CHANGING TEXT ***/
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;

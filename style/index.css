@@ -9,12 +9,6 @@ Colors :
 */
 
 /*** GENERAL***/
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-  box-sizing: border-box;
-}
 
 
 body, html {
@@ -30,6 +24,7 @@ a {
 
 body {
   background-color: #1D1D1D;
+	overflow: hidden;
 }
 
 ::selection{
@@ -37,118 +32,74 @@ body {
   background-color: #fff;
 }
 
-::-webkit-scrollbar {
-  width: .6em;
-  height: .2em;
-}
-::-webkit-scrollbar-thumb {
-  background: grey;
-}
-::-webkit-scrollbar-track {
-  background: #0D0D0D;
-}
+
 
 body {
   scrollbar-face-color: grey;
   scrollbar-track-color: #0D0D0D;
+	padding: 0px;
 }
 
 p, a {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
+
+a {
+	margin: 0px;
+	padding: 0px;
+}
+
 /*/ END OF GENERAL /*/
 
 
 
 /*** FRAME 1 ***/
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-	align-content: center;
-  margin: 0 auto;
 
   width: 100%;
   height: auto;
   position: absolute;
-  padding: 8px;
+  padding: 0px;
+	margin: 0px;
 }
 
 #logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
-  width: 150px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 13%;
-}
-
-#logo a {
-  height: inherit;
-  width: inherit;
-}
-
-#logo img {
-  height: inherit;
-  width: inherit;
-}
-
-#nav-icon-container {
   position: relative;
-  height: auto;
+  height: 15vh;
   width: auto;
-  margin-right: 5%;
-	padding: 5%;
 }
 
-#scroll-menu {
+
+#menu {
+	width: 100%;
 	list-style-type: none;
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 	background-color: #1D1D1D;
-	border-radius: 1vw;
-}
-
-.open {
-	display: block;
-}
-
-.close li{
-	display: none;
+	padding: 0px;
+	margin: 0px;
 }
 
 
-#scroll-menu li {
-	padding : 10px;
+#menu li {
+	padding : 2px;
+	margin: 2px;
+	font-size: 3vh;
 }
 
-#scroll-menu li :hover {
+#menu li :hover {
 	color : #CB7683;
 }
 
-#logo_section {
-	display: flex;
-	flex: 1;
-	justify-content: flex-start;
-}
-
-#menu {
-	display: flex;
-	flex: 3;
-	justify-content: flex-end;
-}
 
 #frame-1 {
   background-image: url('../images/bkgrd.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   width: auto;
