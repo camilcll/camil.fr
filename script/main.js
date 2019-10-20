@@ -60,6 +60,6 @@ window.onload = function() {
 
 
 
-/* UNDER MAINTAINANCE
-window.alert("Cette page n'est pas finalisée car en cours de développement.");
- END OF UNDER MAINTAINANCE */
+/* UNDER MAINTAINANCE */
+window.alert("Ce site est en cours de développement");
+/* END OF UNDER MAINTAINANCE */
