@@ -24,8 +24,10 @@ a {
 
 body {
   background-color: #1D1D1D;
-	overflow: hidden;
-}
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  }
 
 ::selection{
   color: black;
@@ -103,4 +105,35 @@ header {
 
 #menu li :hover {
 	color : #CB7683;
+}
+
+#projets {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10vh;;
+}
+
+.projets_chld {
+  display: flex;
+  background-image: url('../images/camil_logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 30vh;
+  margin: 3vw;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.nthkYet {
+  background-image: none;
+  background-color: rgb(20,20,20);
+}
+
+.projets_chld:hover {
+  opacity: 0.3;
 }
