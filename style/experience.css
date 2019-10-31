@@ -25,6 +25,10 @@ a {
 body {
   background-color: #1D1D1D;
 	overflow: hidden;
+  margin-left: 0px;
+  scrollbar-face-color: grey;
+  scrollbar-track-color: #0D0D0D;
+  padding: 0px;
 }
 
 ::selection{
@@ -41,13 +45,6 @@ body {
 }
 ::-webkit-scrollbar-track {
   background: #0D0D0D;
-}
-
-
-body {
-  scrollbar-face-color: grey;
-  scrollbar-track-color: #0D0D0D;
-	padding: 0px;
 }
 
 p, a {
