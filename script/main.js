@@ -58,4 +58,10 @@ window.onload = function() {
 };
 /* END OF CHANGING TEXT */
 
+function displayProjet(){
+  $("#projets").parent().find(".sectionFrame").hide();
+  $("#projets").show();
+}
+
+
 

@@ -24,16 +24,28 @@ a {
 
 body {
   background-color: #1D1D1D;
-	overflow: hidden;
-  margin-left: 0px;
+	overflow-x: hidden;
   scrollbar-face-color: grey;
   scrollbar-track-color: #0D0D0D;
   padding: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 ::selection{
   color: black;
   background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: .6em;
+  height: .2em;
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
 }
 
 p, a {
@@ -82,6 +94,11 @@ header {
 	margin: 0px;
 }
 
+#main{
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+}
 
 #menu li {
 	padding : 2px;
@@ -98,7 +115,7 @@ header {
   background-image: url('../images/bkgrd.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  min-height: 100vh;
   width: auto;
 
   display: flex;
@@ -131,5 +148,75 @@ h4 {
 
 
 /*** FRAME 2 ***/
+#projets {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-top: 10vh;
+  min-height:100vh ;
+  height: auto;
+  width: 100vw;
+  background-color: #1D1D1D;
+}
+
+.projets_chld {
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 30vh;
+  margin: 3vw;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.popup {
+  display: block;
+  background-color: #333;
+  opacity: 0.9;
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.popupContent {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.popupContent div  {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  margin: 5px;
+  background-color: #c7c7ab;
+  border-radius: 1vw;
+  width: 70vw;
+  height: 60vh;
+  white-space: normal;
+}
+
+.nthkYet {
+  background-image: none;
+  background-color: rgb(20,20,20);
+}
+
+.projets_chld:hover {
+  opacity: 0.3;
+}
 
 /* END OF FRAME 2 */

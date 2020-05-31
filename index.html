@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="images/camil_logo.png">
 	<link rel="stylesheet" type="text/css" href="style/index.css">
-	<script src="script/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
@@ -15,14 +15,14 @@
 	<header>
 		<ul id="menu">
 			<li><a href="index.html"><img id="logo" src="images/camil_logo.png" alt="logo"></a></li>
-			<li> <a href="./projet.html"><p>Mes Projets</p></a></li>
+			<li onclick="displayProjet()"> <a href="#projets"><p>Mes Projets</p></a></li>
 			<li> <a href="./about_me.html"><p>About Me</p> </a></li>
 			<li> <a href="./experience.html"><p>Expérience & Formation</p> </a></li>
 			<li> <a href="./contact.html"><p>Contact Me</p> </a></li>
 		</ul>
 	</header>
-
-		<section id="frame-1">
+	<div id="main">
+		<section id="frame-1" class="sectionFrame">
 			<div id="name-job-container">
 				<h2>Camil COULLON</h2>
 				<h4>
@@ -31,7 +31,63 @@
 			</div>
 			<!-- contact (tel, linkedin...) ?-->
 		</section>
-
-		<script src="script/main.js"></script>
-	</body>
-	</html>
+		
+		<section id="projets" style="display: none;" class="sectionFrame">
+			<div class="popup"></div>
+			<div class="popupContent">
+				<div>
+					<button class="retour btn btn-secondary" type="button" name="button">retour</button>
+				</div>
+			</div>
+			<section class="projets_chld nthkYet" id="pr1">
+				<p>Serveur Web</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr2">
+				<p>Ecran externe </p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr3">
+				<p>Serveur Octoprint</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr4">
+				<p>Alimentation Variable DIY</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr5">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr6">
+				<p>Projet à venir</p>
+			</section>
+			<section class="projets_chld nthkYet" id="pr7">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr8">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr9">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr10">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr11">
+				<p>Projet à venir</p>
+			</section>
+		
+			<section class="projets_chld nthkYet" id="pr12">
+				<p>Projet à venir</p>
+			</section>
+		</section>
+		<script src="script/main.js" defer async></script>
+		<script src="script/popup.js" defer async></script>
+	</div>
+</body>
+</html>
