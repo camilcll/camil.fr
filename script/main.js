@@ -58,9 +58,10 @@ window.onload = function() {
 };
 /* END OF CHANGING TEXT */
 
-function displayProjet(){
-  $("#projets").parent().find(".sectionFrame").hide();
-  $("#projets").show();
+function displayPan(el){
+  let id = $(el).find("a").attr("href");
+  $(id).parent().find(".sectionFrame").hide();
+  $(id).show();
 }
 
 
