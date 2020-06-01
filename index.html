@@ -20,7 +20,7 @@
 			<li><a href="index.html"><img id="logo" src="images/camil_logo.png" alt="logo"></a></li>
 			<li onclick="displayPan(this)"> <a href="#projets"><p>Mes Projets</p></a></li>
 			<li onclick="displayPan(this)"> <a href="#aboutme"><p>About Me</p> </a></li>
-			<li onclick="displayPan(this)"> <a href="#expForm"><p>Expérience & Formation</p> </a></li>
+			<li id="liExp" onclick="displayPan(this);displayPanExpForm();"> <a href="#expForm"><p>Expérience & Formation</p> </a></li>
 			<li onclick="displayPan(this)"> <a href="#contact"><p>Contact Me</p> </a></li>
 		</ul>
 	</header>
@@ -95,8 +95,8 @@
 		<section id="expForm" style="display: none;" class="sectionFrame">
 			<main>
 				<div id="experience" class="container">
-					<h3 class="card-title text-light">Mes Experiences</h3>
-					<div class="row">
+					<h3 id="rowExpTitle" class="card-title text-light">Mes Experiences</h3>
+					<div id="rowExp" class="row" style="display: none;">
 						<div class="col-md-12">
 							<div class="main-timeline4">
 								<div class="timeline">
@@ -160,8 +160,8 @@
 					</div>
 				</div>
 				<div id="formation" class="container">
-					<h3 class="card-title text-light">Ma Formation</h3>
-					<div class="row">
+					<h3 id="rowFormTitle" class="card-title text-light">Ma Formation</h3>
+					<div id="rowForm" class="row" style="display: none;">
 						<div class="col-md-12">
 							<div class="main-timeline4">
 								<div class="timeline">

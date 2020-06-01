@@ -64,5 +64,17 @@ function displayPan(el){
   $(id).show();
 }
 
+function displayPanExpForm(){
+  let content = $(".card-title").siblings();
+  if(content.css("display") == "none"){
+    content.fadeIn();
+  }
+  else{
+    content.fadeOut();
+  }
+}
+
+
+
 
 

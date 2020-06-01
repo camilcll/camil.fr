@@ -248,4 +248,8 @@ h4 {
   background-color: #1D1D1D;
 }
 
+.card-title:hover{
+  color: #CB7683!important;
+  align-self: center!important;
+}
 /* END FRAME 4*/
