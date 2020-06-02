@@ -269,3 +269,11 @@ footer{
   background-color: #333;
   color: white;
 }
+
+footer i{
+  font-size: x-large!important;
+}
+
+footer a {
+  text-decoration: none!important;
+}
