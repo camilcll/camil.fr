@@ -235,9 +235,14 @@ h4 {
   background-color: #1D1D1D;
 }
 
-#yearspe::before{
-  border-top-color: #f7a0ac;
+.progress{
+  height: 1.5rem!important;
 }
+
+.progress div{
+  background-color: #CB7683;
+}
+
 
 /* END FRAME 3*/
 
@@ -255,6 +260,10 @@ h4 {
 .card-title:hover{
   color: #CB7683!important;
   align-self: center!important;
+}
+
+#yearspe::before{
+  border-top-color: #f7a0ac;
 }
 /* END FRAME 4*/
 
