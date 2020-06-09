@@ -12,6 +12,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/timeline.css">
+	<link rel="stylesheet" type="text/css" href="style/skills.css">
+	<link rel="stylesheet" type="text/css" href="style/skills.css.map">
 </head>
 
 <body>
@@ -89,7 +91,117 @@
 			</section>
 		</section>
 		<section id="aboutme" style="display: none;" class="sectionFrame">
-			
+			<h3 id="rowExpTitle" class="card-title text-light">Mon Objectif</h3>
+			<h3 id="rowExpTitle" class="card-title text-light">Mes Compétences</h3>
+			<div class="container">
+				<div class="row">
+					<ul class="col skills-bar-container m-3">
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>HTML5</h3>
+								<span class="percent" id="htmlCss-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressred" id="progress-html"></span>
+							</div>
+						</li>
+						<li>
+							<div class="progressbar-title">
+								<h3>CSS / SASS</h3>
+								<span class="percent" id="css-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressblue" id="progress-css"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>JavaScript / jQuery</h3>
+								<span class="percent" id="javascript-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progresspurple" id="progress-javascript"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>PHP</h3>
+								<span class="percent" id="php-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressorange" id="progress-php"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>AngularJS</h3>
+								<span class="percent" id="angular-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressgreen" id="progress-angular"></span>
+							</div>
+						</li>
+					
+					</ul>
+					<ul class="col skills-bar-container m-3">
+					
+						<li>
+							<div class="progressbar-title">
+								<h5>HTML5 / CSS /  / PHP</h5>
+								<span class="percent" id="html-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressred" id="progress-html"></span>
+							</div>
+						</li>
+						<li>
+							<div class="progressbar-title">
+								<h3>CSS / SASS</h3>
+								<span class="percent" id="css-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressblue" id="progress-css"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>JavaScript / jQuery</h3>
+								<span class="percent" id="javascript-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progresspurple" id="progress-javascript"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>PHP</h3>
+								<span class="percent" id="php-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressorange" id="progress-php"></span>
+							</div>
+						</li>
+					
+						<li>
+							<div class="progressbar-title">
+								<h3>AngularJS</h3>
+								<span class="percent" id="angular-pourcent"></span>
+							</div>
+							<div class="bar-container">
+								<span class="progressbar progressgreen" id="progress-angular"></span>
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+				
+			</div>
 		</section>
 		<section id="expForm" style="display: none;" class="sectionFrame mb-3">
 			<main class="pb-5">
@@ -182,11 +294,13 @@
 		</section>
 		<script src="script/main.js" defer async></script>
 		<script src="script/popup.js" defer async></script>
+		<script src="script/progressAnimation.js" defer async></script>
 	</div>
 	<footer class="d-flex justify-content-center align-items-center mt-3">
 		<div>&copy; Copyright 2020 CAMIL COULLON</div>
 		<a href="https://www.linkedin.com/in/camil-coullon-03a980174/" target="_blank"><i class="fa fa-linkedin-square ml-3"></i></a>
 		<a href="mailto:cll.camil@hotmail.com"><i class="fa fa-envelope-o ml-3"></i></a>
+		<a href="https://github.com/camilcll" target="_blank"><i class="fa fa-github-square ml-3"></i></a>
 	</footer>
 </body>
 </html>
