@@ -70,9 +70,9 @@ html, body {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-.skills-bar-container li .bar-container #progress-css {
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
+.skills-bar-container li .bar-container #progress-cpp {
+  -webkit-animation-name: progress-cpp;
+  animation-name: progress-cpp;
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
 }
@@ -88,9 +88,39 @@ html, body {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s;
 }
-.skills-bar-container li .bar-container #progress-angular {
-  -webkit-animation-name: progress-angular;
-  animation-name: progress-angular;
+.skills-bar-container li .bar-container #progress-sql {
+  -webkit-animation-name: progress-sql;
+  animation-name: progress-sql;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-mysql {
+  -webkit-animation-name: progress-mysql;
+  animation-name: progress-mysql;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-bash {
+  -webkit-animation-name: progress-bash;
+  animation-name: progress-bash;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-py {
+  -webkit-animation-name: progress-py;
+  animation-name: progress-py;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-adm {
+  -webkit-animation-name: progress-adm;
+  animation-name: progress-adm;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-c {
+  -webkit-animation-name: progress-adm;
+  animation-name: progress-adm;
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
 }
@@ -107,7 +137,7 @@ html, body {
   background-color: #9b59b6;
 }
 
-.progressorange {
+.progressyellow {
   background-color: #ffa500;
 }
 
@@ -115,20 +145,40 @@ html, body {
   background-color: #27ae60;
 }
 
+.progresspink {
+  background-color: #CB7683;
+}
+
+.progresslblue {
+  background-color: #2fcea5;
+}
+
+.progressagreen {
+  background-color: #8fb800;
+}
+
+.progressorange {
+  background-color: #F68657;
+}
+
+.progressgold {
+  background-color: #948d26;
+}
+
 @-webkit-keyframes progress-html {
   0% {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 95%;
   }
 }
-@-webkit-keyframes progress-css {
+@-webkit-keyframes progress-cpp {
   0% {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 @-webkit-keyframes progress-javascript {
@@ -136,7 +186,7 @@ html, body {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 @-webkit-keyframes progress-php {
@@ -144,15 +194,55 @@ html, body {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 60%;
   }
 }
-@-webkit-keyframes progress-angular {
+@-webkit-keyframes progress-sql {
   0% {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 80%;
+  }
+}
+@-webkit-keyframes progress-mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes progress-bash {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-py {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes progress-adm {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-webkit-keyframes progress-c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
   }
 }
 @-moz-keyframes progress-html {
@@ -160,15 +250,15 @@ html, body {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 95%;
   }
 }
-@-moz-keyframes progress-css {
+@-moz-keyframes progress-cpp {
   0% {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 @-moz-keyframes progress-javascript {
@@ -176,7 +266,7 @@ html, body {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 @-moz-keyframes progress-php {
@@ -184,34 +274,26 @@ html, body {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 60%;
   }
 }
-@-moz-keyframes progress-angular {
+@-moz-keyframes progress-sql {
   0% {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 80%;
   }
 }
-@keyframes progress-html {
+@-moz-keyframes progress-mysql {
   0% {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
-@keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes progress-javascript {
+@-moz-keyframes progress-bash {
   0% {
     width: 0%;
   }
@@ -219,20 +301,108 @@ html, body {
     width: 70%;
   }
 }
+@-moz-keyframes progress-py {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@-moz-keyframes progress-adm {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-moz-keyframes progress-c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes progress-cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes progress-php {
   0% {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 60%;
   }
 }
-@keyframes progress-angular {
+@keyframes progress-sql {
   0% {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 80%;
+  }
+}
+@keyframes progress-mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progress-bash {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-py {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes progress-adm {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
   }
 }
 
